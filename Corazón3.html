@@ -142,6 +142,22 @@ html,body{width:100%;height:100%;overflow:hidden;font-family:'Cormorant Garamond
 }
 @keyframes arrowBounce{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
 
+/* ══ OSITOS ══ */
+.bears-img-wrap{
+  display:flex;
+  justify-content:center;
+  margin-bottom:-10px;
+  position:relative;
+  z-index:31;
+  pointer-events:none;
+}
+.bears-img{
+  width:160px;
+  filter:drop-shadow(0 4px 12px rgba(180,80,120,.25));
+  animation:bearFloat 3s ease-in-out infinite;
+}
+@keyframes bearFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+
 /* ══ QUOTE BOX ══ */
 .quote-scene{position:absolute;right:6%;top:50%;transform:translateY(-52%);z-index:30}
 .quote-frame{
@@ -327,11 +343,14 @@ html,body{width:100%;height:100%;overflow:hidden;font-family:'Cormorant Garamond
         Agita el cerezo
       </div>
     </div>
+    <div class="bears-img-wrap">
+      <img src="multimedia/osos.png" alt="Ositos" class="bears-img">
+    </div>
     <div class="quote-frame">
       <span class="open-q">"</span>
-      <p class="quote-text">
-        Dicen que los cerezos<br>florecen una vez al año,<br>
-        pero <strong>tú floreces tan bonito</strong><br>que iluminas mi calendario.
+      <p class="quote-text">  
+        Desde el día en que llegaste<br>ya nada volvió a ser igual,<br>
+         porque ahora hasta lo simple <br><strong>se siente especial.</strong><br>
         <span class="emo"> ♥️🌹</span>
       </p>
     </div>
